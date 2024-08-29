@@ -87,15 +87,19 @@ export default function Home({ url }) {
       const formData = new FormData();
       console.log(formData);
 
-      formData.append("imgFile", file);
+      formData.append("file", file);
 
       try {
-        await axios.put(`${url}/apis/branded-things/products/${id}`, formData, {
-          headers: {
-            Authorization: `Bearer ${localStorage.access_token}`,
-            "Content-Type": "multipart/form-data",
-          },
-        });
+        await axios.patch(
+          `${url}/apis/branded-things/products/${id}`,
+          formData,
+          {
+            headers: {
+              Authorization: `Bearer ${localStorage.access_token}`,
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
         Toastify({
           text: "Image updated successfully",
           duration: 2000,
