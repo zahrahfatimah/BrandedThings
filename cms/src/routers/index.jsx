@@ -2,7 +2,7 @@ import { createBrowserRouter, redirect } from "react-router-dom";
 import Toastify from 'toastify-js'
 import Login from "../views/login";
 import BaseLayout from "../views/BaseLayout";
-import Home from "../views/home";
+import Home from "../views/Home";
 import Categories from "../views/Cartegory";
 import AddPage from "../views/AddPage";
 import EditForm from "../views/EditPage";
