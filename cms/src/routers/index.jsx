@@ -1,6 +1,6 @@
 import { createBrowserRouter, redirect } from "react-router-dom";
 import Toastify from 'toastify-js'
-import Login from "../views/login";
+import Login from "../views/Login";
 import BaseLayout from "../views/BaseLayout";
 import Home from "../views/Home";
 import Categories from "../views/Cartegory";
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
     },
   },
   {
-    path: '/',
+    // path: '/home',
     element: <BaseLayout />,
     loader: () => {
       if (!localStorage.access_token) {
