@@ -5,7 +5,7 @@
 # Public (mode tamu)
 
 -  Menampilkan semua data product dalam bentuk `card` secara public tanpa harus login terlebih dahulu
- ![alt text](/cms/assets/img1.png)
+ ![alt text](assets/img1.png)
 - Fitur `SEARCH` untuk mencari data product berdasarkan description
 ![alt text](assets/img2.png)
 - Fitur `SORT`untuk mencari urutan data product berdasarkan tanggal/id (gatau ide nya dari husen) 

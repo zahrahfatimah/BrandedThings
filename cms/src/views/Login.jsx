@@ -12,10 +12,11 @@ export default function Login({ url }) {
   async function handleLogin(e) {
     e.preventDefault(); // Prevent auto refresh
     try {
-      let { data } = await axios.post(`${url}/apis/login`, { email, password });
+      const { data } = await axios.post(`${url}/apis/login`, { email, password });
       // console.log(data);
 
       localStorage.setItem("access_token", data.data.access_token);
+      
       navigate("/home");
       Toastify({
         text: "Success Login",
